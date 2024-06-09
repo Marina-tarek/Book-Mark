@@ -32,7 +32,8 @@ body {
 
 h1 {
     font-family: "Pacifico", cursive;
-    z-index: 2 !important;
+    z-index: 0 !important;
+    font-size: 50px;
 }
 
 div h1::before {
