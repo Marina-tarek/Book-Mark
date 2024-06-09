@@ -42,9 +42,7 @@
           </label>
           <input type="url" id="SiteURL" placeholder="Website URL" class="form-control">
         </div>
-
-
-        <button onclick="addproduct()" class="btn px-5 btn-submit text-white">Submit</button>
+        <button id="SubmitBtn" class="btn px-5 btn-submit text-white">Submit</button>
 
       </div>
 
@@ -63,12 +61,10 @@
       </table>
 
 
-
     </div>
     <!--Start Alert Box -->
-    -- <div
-      class="boxAlert d-none position-absolute top-0 start-0 end-0 bottom-0 d-flex justify-content-center align-items-center">
-      <div class="innerBox p-4 bg-white shadow-lg rounded-2">
+  <div id="boxAlert" class="oldStyle position-absolute top-0 start-0 end-0 bottom-0 justify-content-center align-items-center">
+      <div id="boxAlerSection" class="p-4 bg-white shadow-lg rounded-2">
         <header class="d-flex justify-content-between align-items-center mb-4 w-100">
           <div>
             <i class="fa-solid fa-circle me-1 red-color fs-4"></i>
@@ -76,7 +72,7 @@
             <i class="fa-solid fa-circle me-1 green-color fs-4"></i>
           </div>
 
-          <button class="btn fs-3 closeBtn"><i class="fa-solid fa-xmark"></i></button>
+          <button  id="closeIcon" class="btn fs-3"><i class="fa-solid fa-xmark"></i></button>
         </header>
         <p class="boxSection m-0">
           Site Name or Url is not valid, Please follow the rules below :
